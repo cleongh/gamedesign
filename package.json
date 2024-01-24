@@ -1,23 +1,33 @@
 {
-  "name": "game_design",
+  "name": "gamedesign",
   "version": "1.0.0",
-  "description": "",
-  "main": "reveal.js",
+  "description": "web games",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx parcel index.org --open",
+    "build": "npx parcel build index.org --public-url ./ --dist-dir docs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clnznr/gamedesign.git"
+    "url": "git+https://github.com/cleongh/gamedesign.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "web",
+    "games"
+  ],
+  "author": "cleon",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/clnznr/gamedesign/issues"
+    "url": "https://github.com/cleongh/gamedesign/issues"
   },
-  "homepage": "https://github.com/clnznr/gamedesign#readme",
+  "homepage": "https://github.com/cleongh/gamedesign#readme",
   "devDependencies": {
-    "reveal.js": "^4.2.1"
+    "parcel": "^2.10.3"
+  },
+  "dependencies": {
+    "reveal.js": "^5.0.2"
   }
 }

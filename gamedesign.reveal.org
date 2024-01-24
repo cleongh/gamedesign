@@ -1,11 +1,6 @@
 #+TITLE: Diseño de videojuegos
 #+AUTHOR: Carlos León
-#+REVEAL_ROOT: node_modules/reveal.js
-#+LANGUAGE: es
-#+OPTIONS: toc:nil reveal_history:t timestamp:nil date:nil author:nil num:nil reveal_single_file:t inline:nil
-#+REVEAL_INIT_OPTIONS: slideNumber:true
-#+REVEAL_EXTRA_CSS: css.css
-#+REVEAL_THEME: beige
+#+setupfile:  setup.org
 
 
 * Introduction
