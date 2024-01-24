@@ -1,0 +1,23 @@
+{
+  "name": "game_design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "reveal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clnznr/gamedesign.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clnznr/gamedesign/issues"
+  },
+  "homepage": "https://github.com/clnznr/gamedesign#readme",
+  "devDependencies": {
+    "reveal.js": "^4.2.1"
+  }
+}

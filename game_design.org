@@ -1,0 +1,1280 @@
+#+TITLE: Diseño de videojuegos
+#+AUTHOR: Carlos León
+#+REVEAL_ROOT: node_modules/reveal.js
+#+LANGUAGE: es
+#+OPTIONS: toc:nil reveal_history:t timestamp:nil date:nil author:nil num:nil reveal_single_file:t inline:nil
+#+REVEAL_INIT_OPTIONS: slideNumber:true
+#+REVEAL_EXTRA_CSS: css.css
+#+REVEAL_THEME: beige
+
+
+* Introduction
+
+
+** Game design classes
+
+- An overview on the most relevant aspects of game design and level design
+- We will try to review /many/ things, although there is much more
+
+* Creating videogames
+
+** Creating experience
+
+Games are all about experience
+
+Games occur in the player's mind
+
+In general terms, what we do as designers is create dynamic experiences
+
+#+REVEAL: split
+
+** Games are free (as in freedom) virtual experiences
+
+Players play freely, they enjoy it (intrinsic motivation)
+
+However, games happen in time and spatial constraints
+
+
+# ** Types of games [@caillois2001man]
+
+# - Agon: Competences
+# - Alea: Luck
+# - Mimicry: Simulation
+# - Ilinx: Vertigo
+
+
+# *** Agon
+
+# #+CAPTION: Players are relatively equal, and they must show they superiority
+# [[file:street_fighter.png]]
+
+# *** Alea
+
+# #+CAPTION: Players do not control they fate, but they try to overcome/win over
+# destiny
+# [[file:poker.png]]
+
+# *** Mimicry
+
+# #+CAPTION: Simulation (more or less realistic) of a ruleset
+# [[file:wow.png]]
+
+# *** Ilinx
+
+# #+CAPTION: Experience emotions outside everyday reality
+# [[file:cars.png]]
+
+
+** Designing videogames requires work
+
+Finishing a complete game desing is not a simple task of big "creativity"
+
+# [@kaufman2009]
+
+It requires knowledge, teamwork and a lot of experience
+
+** Particularities of a videogame
+
+Videogames are complex and involve many forms or art and technology
+
+#+REVEAL: split
+
+Designing a videogame is a /design/ task, there is no automated pipeline ensuring a good gameplay
+
+#+REVEAL: split
+
+A game designer should have these skills:
+
+- Plays a lot
+- Able to come up with non-video games
+- Knowledge on art (music, sound)
+- Some knowledge on technology/programming
+- Write decent narratives
+- Abstraction skills
+- Communication and writing skills
+- LOVES videogames
+
+#+REVEAL: split
+
+A game design has (among other, and as a simplification), two main perspectives:
+
+- /High level design/: concept, concept expansion, formal draft
+- /Low level design/: interface, mechanics, tools, narrative, *game design document*
+
+
+*** Game specification
+
+It is not uncommon to refine an idea iteratively when designing a videogame:
+
+1. The player can use keys
+2. The player can use keys of several types
+3. The player can use two types of keys. Red ones will open the master room, and green ones will open any other door
+
+#+REVEAL: split
+
+4. [@4] The player can use two types of keys. Red ones will be found only once per dungeon, and at least \(n > 15\) rooms from the initial one. Each dungeon contains, exactly \(k\) green keys, which correspond to all locked doors in the dungeon
+
+** Game and player
+
+Games are pleasant to the player. Why?
+
+
+*** Surprise and discovery
+
+Games produce surprise
+
+Overcoming uncertainty and discovery is rewarding
+
+
+*** Problem solving and challenge
+
+Playing means challenge--without it, boredom happens!
+
+Solving a conflict is pleasant
+
+*** Playability
+
+Playability is the set of properties that describe the player experience
+in a certain game
+
+#+REVEAL: split
+
+Playability determines the /game genre/
+
+* Game design document (GDD)
+
+
+The magical recipe for structuring a game design idea does not exist
+
+#+REVEAL: split
+
+However, there are some good practices that are worth considering when writing down a design
+
+#+REVEAL: split
+
+** The GDD contract
+
+The GDD is a great way of communication between all members of a development team
+
+In theory, all decisions should make it to the GDD, and whatever is written there should be assumed to be a decision
+
+
+** What the GDD contains can vary
+
+The GDD depends on the team, and must be useful, not strict and
+cumbersome
+
+#+REVEAL: split
+
+There are three detail levels that, some times, are laid out in different documents:
+
+- Overview: the general concept and ideas
+- Details: all mechanics and details. It is great as the design knowledge base
+- Story: The lore, settings and overall story leading to (or happening in) the game
+
+** GDD examples
+
+- [[https://gamedevs.org/uploads/grand-theft-auto.pdf][GTA original]]
+- [[http://www.graybeardgames.com/download/diablo_pitch.pdf][Diablo]]
+
+
+** Info in the GDD
+
+*** Basic information
+
+- Title (tentative)
+- Brief synopsis (1 paragraph)
+- Genre
+- Age range
+- PEGI info
+- Target audience
+
+*** Lore and context
+
+Description of the game world (fantasy, sci-fi, no story at all...)
+
+*** Core loop
+
+The sequence of top-level abstractions that will keep the players engaged:
+
+*Prepare*, *challenge*, *reward*
+
+*** Mechanics
+
+- Walk: the player can walk by using the left stick...
+- Jump: pressing ~X~ the player can jump 40 game units
+- Time: the level must be finished en 300s
+- Take item: ...
+
+*** Dynamics
+
+What *top level experiences* will arise from using the mechanics?
+
+*** Aesthetics
+
+- Graphics (with examples!)
+- Music
+
+*** Controls
+
+- Gamepad controls
+- Keyboard controls
+- ...
+
+*** Tables and data
+
+| Enemy  | Life | Speed |
+|--------+------+-------|
+| Turtle |   10 |     1 |
+| Zombie |    1 |     3 |
+
+
+* Mechanics, dynamics and aesthetics
+
+# [@Hunicke04mda:a]
+
+** Game mechanics
+
+The interactions and relations the player faces after removing aesthetics, technology and story
+
+# [@Schell:2014:AGD:3006351]
+
+#+REVEAL: split
+
+Game mechanics are also described as rules or simulations that let the user learn and explore the possibilities through feedback mechanisms
+
+# [@Koster:2013:TFG:2601678]
+
+#+REVEAL: split
+
+All the game components and the relations between them
+
+# [@Schell:2014:AGD:3006351]:
+
+- Space
+- Resources, attributes and states (information)
+- Actions
+- Rules
+- Abilities
+- Luck
+
+
+*** Space
+
+#+CAPTION: Space is determined by the places in the game and their interactions
+
+[[./tetris.png]]
+
+#+REVEAL: split
+
+The space is also determined by the /dimensions/
+
+The dimensions are not only aesthetics, they are also a design tool
+
+#+REVEAL: split
+
+#+caption: 2D
+[[./joypack.png]]
+
+#+REVEAL: split
+
+#+caption: 3D
+[[./threedi.png]]
+
+
+
+*** Resources
+
+Game mechanics include the resources (and their logic):
+
+- Platforms
+- Coins
+- Enemies
+- Life
+- ...
+
+#+REVEAL: split
+
+Resources can be shown to the user
+
+[[./lifebar.png]]
+
+#+REVEAL: split
+
+However, in game mechanics, not all resources will be visible:
+
+- Speed
+- Damage
+- Random number thresholds
+- ...
+
+#+REVEAL: split
+
+Classic game design also divides resources into:
+
+- /consumable/
+- /non-consumable/
+
+#+REVEAL: split
+
+Resources also have attributes and state:
+
+- =position=
+- =life=
+- =ammo=
+- =...=
+
+#+REVEAL: split
+
+Through display, sound and interface, we transmit *resource information*
+
+#+REVEAL: split
+
+#+caption: Differentiation between player and enemy
+[[./angrybirds.png]]
+
+#+REVEAL: split
+
+#+caption: A more complicated scenario for resource information. But still, we can identify resources
+[[./war.png]]
+
+#+REVEAL: split
+
+Again, it is important to remember that the player does not have to have /all the information/
+
+#+begin_quote
+  Do we need to know the exact speed of a football in a match?
+#+end_quote
+
+#+REVEAL: split
+
+*** Actions
+
+There are two kinds of actions in a game:
+
+- Operative actions
+- Resulting actions
+
+#+REVEAL: split
+
+/Operative actions/ are those carried out by the player
+
+In Super Mario Bros: =jump=, =run=, =chrouch=
+
+#+begin_quote
+  The less, the better
+#+end_quote
+
+#+REVEAL: split
+
+/Resulting actions/ are consequences of the application of /operative
+actions/
+
+In Super Mario Bros: =kill enemy=, =break block=, =use turtle shell=
+
+#+begin_quote
+  The more, the merrier
+#+end_quote
+
+#+REVEAL: split
+
+One of the most common and useful ideas is that by reducing the amount
+of operative actions and increasing the amount of resulting actions, a
+game can become "easy to play, difficult to master"
+
+#+REVEAL: split
+
+Now, for a couple genre examples...
+
+#+REVEAL: split
+
+*** Beat'em up
+
+#+caption: Brawler games
+[[./images_brawler.png]]
+
+#+REVEAL: split
+
+- 4-way movement
+- Punch-kick-jump
+- Co-operative game
+- Steal weapons
+- Power Ups (Health)
+- Choose protagonist
+- Special attacks
+- Final bosses
+
+#+REVEAL: split
+
+*** Hack'n'slash
+
+[[./gow.png]]
+
+#+REVEAL: split
+
+- Third-person camera
+- Weak-strong attack
+- Combos
+- Counter-attack
+- Ranged attack
+- Block
+- Dodge
+- Finishers
+
+#+REVEAL: split
+
+** Game dynamics
+
+The run-time behavior of the mechanics acting on player inputs and each other' outputs over time
+
+#+REVEAL: split
+
+The game dynamics are the high level phenomenon that, built on the mechanics, creates the "gaming story"
+
+#+REVEAL: split
+
+For instance, constructing a basic city in Age of Empires 2:
+
+# #+begin_html
+#   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZLdHkVj6ka8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+# #+end_html
+
+#+REVEAL: split
+
+** Game aesthetics
+
+The desirable emotional responses evoked in the player, when interacting
+with the game system
+
+[[./aesthetics.png]]
+
+#+REVEAL: split
+
+Canonically, aesthetics include graphics and sound
+
+However, many other aspects of a videogame can be considered part of the aesthetics
+
+#+REVEAL: split
+
+#+caption: Limbo's aesthetics
+[[./limbo.png]]
+
+#+REVEAL: split
+
+# #+begin_html
+#   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hgZXiHfNt0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>  </iframe>
+# #+end_html
+
+Music is also fundamental in a game
+
+#+REVEAL: split
+
+** Puzzles
+
+Puzzles have a problem: once they are solved, *the dynamics vanish*
+
+#+REVEAL: split
+
+** Puzzles are heavily present in videogames
+
+#+caption: Puzzles are fundamental in Portal 2
+[[./portal2.png]]
+
+#+REVEAL: split
+
+Videogame puzzles maximize user immersion when the objective and the
+puzzle-solving mechanics are well integrated with the gameplay
+
+#+REVEAL: split
+
+** Feedback is fundamental in puzzles
+
+One of the most typical sources of frustration in players is not finding
+out whether they are doing the right thing or not
+
+Good puzzles inform the user about the objective (what is to be solved)
+and the player's progress
+
+#+REVEAL: split
+
+** Puzzles are a dangerous piece of game desing
+
+Puzzles that block players can expel users
+
+There are many ways to avoid this:
+
+- Give the solution (at a price, of after several tries)
+- Hinting
+- Alternative paths
+
+* Story and narrative
+
+
+#+REVEAL: split
+
+One of the most effective tools for engaging in a video game is a good
+narrative
+
+#+REVEAL: split
+
+** Narratives are ubiquitous
+
+We, humans, love narratives. We tell and hear narratives every day
+
+Conveying content through narratives is both effective and pleasant for
+the player
+
+#+REVEAL: split
+
+** Characters
+
+Narratives tell human lives
+
+Therefore, characters are the main vehicle for narratives in game design
+
+#+REVEAL: split
+
+** Games already have characters!
+
+Additionally, we are already using virtual characters
+
+#+caption: Nathan Drake
+
+[[./nathandrake.png]]
+
+
+#+REVEAL: split
+
+*** Emotions
+
+As players, we connect with the virtual characters
+
+We understand and feel emotions, and this can leverage the perception of
+the game
+
+#+REVEAL: split
+
+#+caption: Last of us
+[[./lastofus.png]]
+
+#+REVEAL: split
+
+** Plot
+
+The narrative plot is one of the main constituents of a story
+
+Classic plots work well in videogames, and do not distract players from
+the gameplay
+
+#+REVEAL: split
+
+** Different plots and endings
+
+In a videogame, we can let the player experience different plots,
+according the player's decisions
+
+#+REVEAL: split
+
+Actually, multiple plot exploration exists in "choose your your adventure"-like narratives
+
+#+caption: Black Mirror: Bandersnatch
+[[./bander.png]]
+
+#+REVEAL: split
+
+** Narrative vs. open world
+
+#+caption: Red Dead Redemption 2
+[[./rdr2.png]]
+
+#+REVEAL: split
+
+One of the longest standing objectives is to provide an open game in
+which great narratives occur, no matter the player's choices
+
+Technically (both from the writers and the programmers), this is
+unachieved and challenging
+
+#+REVEAL: split
+
+It is hard to combine the possibilities of open worlds with the richness
+of good narratives, but there are ways to "provide" both
+
+#+REVEAL: split
+
+#+caption: In Elder Scrolls V: Skyrim, the player can wander around the world, or interact at specific places for a good narrative
+#+attr_html: :width 300px
+[[./skyrimnarrative.png]]
+
+#+REVEAL: split
+
+** Level ambience also tells a story
+
+The aesthetics, the ambience and the decoration contribute to conveying
+a narrative
+
+#+REVEAL: split
+
+[[./turtlecold.png]]
+
+#+REVEAL: split
+
+[[./turtlesewer.png]]
+
+* Player cognition
+
+# [@hodent2017gamer]
+
+
+#+REVEAL: split
+
+#+begin_quote
+  Videogames happen in the mind of the player
+#+end_quote
+
+#+REVEAL: split
+
+Understanding player cognition is an invaluable tool for good game
+design
+
+#+REVEAL: split
+
+** Motivation and gameplay
+
+Player's behavior is affected by /motivation/
+
+#+REVEAL: split
+
+** Intrinsic motivation
+
+Intrinsic motivation happens when the reward is internal
+
+#+begin_quote
+  For instance, being the first player in the classification to show off
+#+end_quote
+
+#+REVEAL: split
+
+** Extrinsic motivation
+
+Extrinsic motivation happens when the activity to be carried out is not
+an objective, but leads to another motivation
+
+#+REVEAL: split
+
+#+caption: Gold farming in League of Legends leads to better objects
+[[./goldfarming.png]]
+
+#+REVEAL: split
+
+** Reinforcement
+
+Reinforcement is a classic way of controlling behaviour
+
+#+REVEAL: split
+
+*** Rewarding the player
+
+- Consumable prizes (coins)
+- Level prizes (leveling up)
+- Game mechanic prizes (improving/easening mechanics)
+- Narrative prizes (more story)
+- Emotional prizes (characters and their relationships)
+- Places (unlocking new places)
+- Achievement (winning 100% of the game)
+
+#+REVEAL: split
+
+#+caption: Super Mario Bros mushrooms are a classic prize
+[[./toadstool.png]]
+
+#+REVEAL: split
+
+*** Reward frequency
+
+The reward frequency can vary:
+
+- fixed rate
+- variable rate
+- activity rate (the more you do, the more you win)
+
+#+REVEAL: split
+
+#+caption: Clash of clans has a very addictive (and effective) rewarding system
+[[./clashclans.png]]
+
+#+REVEAL: split
+
+*** Punishment
+
+Punishment is, along with reinforcement, a very effective way of controlling player behaviour
+
+#+REVEAL: split
+
+*** Balance
+
+The "perfect" game design achieves a good balance between reward and punishment
+
+** Learning curve and difficulty
+
+Players (humans) have a limited memory span
+
+Memory is limited in terms of amount of elements to be learnt, and the amount of time the learning perdures
+
+#+REVEAL: split
+
+** Teach one mechanic at a time
+
+Focusing on one single thing eases learing
+
+If only one mechanic at a time in taught, the player will have less difficulties
+
+#+REVEAL: split
+
+** Let the player practice
+
+One a mechanic is "described", it is important to let the player practice in order to fixate the behavior
+
+#+REVEAL: split
+
+** Repetition
+
+Repeating behavior fixates memories
+
+However, repetition needs to be spaced to be effective
+
+#+REVEAL: split
+
+#+caption: Spaced repetition
+[[./spaced_repetition.png]]
+
+#+REVEAL: split
+
+This means that mechanics have to be refreshed, especially at the
+beginning of the game
+
+#+REVEAL: split
+
+#+caption: Shooting gallery in Zelda Ocarina of time
+[[./shootinggallery.png]]
+
+#+REVEAL: split
+
+** Interface and HUD
+
+The game interface connects the player with the game world
+
+The interface defines the input/output protocol
+
+[[./interface.png]]
+
+#+REVEAL: split
+
+The interface is not only what is displayed on the screen
+
+Every aspect of the communication between the system and the player is
+part of the interface
+
+[[./dualshock.png]]
+
+#+REVEAL: split
+
+Designing a videogame for computer and for console is challenging
+because the players can have very different controllers
+
+- Keyboard
+- Mouse
+- Touchscreen
+- Gamepad
+- VR headset
+
+#+REVEAL: split
+
+#+begin_quote
+  Not every gameplay con be played fully satisfactory with every input
+#+end_quote
+
+* Level Design
+
+
+#+REVEAL: split
+
+** Conceptualization
+
+Conceptualizing a level requires answering (among others) these
+questions:
+
+- Why does the player need the level?
+- Why does the game need the level?
+
+#+REVEAL: split
+
+*** How to come up with a level
+
+
+1. Mental ideation
+2. Pen and paper draft
+3. Draft in level editor
+
+#+REVEAL: split
+
+#+begin_quote
+  If the level seems long and boring, then *it is* long and boring
+#+end_quote
+
+#+REVEAL: split
+
+** Worlds
+
+Game mechanics must be put to action when playing a level (that is why
+we have them!)
+
+But, in general, remember that /walking is not a mechanic/, it is just
+the way to go from one point to another
+
+#+REVEAL: split
+
+** Characters
+
+Levels contain other characters, and these characters also play a role
+in a level
+
+[[./guardocarina.png]]
+
+#+REVEAL: split
+
+** Interest and anticipation
+
+#+caption: A good camera layout and the appropriate decoration can
+provide a good ambience
+[[./expectation.png]]
+
+#+REVEAL: split
+
+** Design, graphics and sound
+
+The designer, generally, is not directly involved in the creation of
+artistic assets for the levels
+
+However, there must be a dialogue between designers and artists for the
+assets to make sense inside the level
+
+#+REVEAL: split
+
+** Design coherence
+
+Overall, the level must be coherent
+
+#+caption: Lake Hylia in the Zelda series
+[[./hylia.png]]
+
+#+REVEAL: split
+
+It does not make sense to have stimpacks in ancient ruins!
+
+* Writing levels
+
+
+#+REVEAL: split
+
+** Level objectives
+
+A level presents, at least, one objective
+
+(Ideally, only one. But this obviously depends)
+
+It must be created as a /unit/
+
+#+REVEAL: split
+
+More elements and complexity does not mean more fun
+
+#+REVEAL: split
+
+Levels should not have too many objetives, because of learning
+principles
+
+#+REVEAL: split
+
+Levels should be playable in one single game session (i.e. should not be
+too long)
+
+#+REVEAL: split
+
+#+caption: It is very useful to organize and structure the progression of game levels
+[[./levelorganization.png]]
+
+** Challenging player skills
+
+Levels must challenge player skills in order to be interesting
+
+# #+begin_html
+#   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Phs2DhzGie4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>  </iframe>
+# #+end_html
+
+#+REVEAL: split
+
+** Rhythm and tension
+
+Demanding areas (many enemies, for instance) require energy from the
+player
+
+Balancing effort and relax is necessary for the player to keep on at the
+appropriate pace
+
+#+REVEAL: split
+
+#+caption: Towns are a classic resource for implementing a relaxing safe zone
+[[./zelda2town.png]]
+
+#+REVEAL: split
+
+#+caption: Tension arc in Mass Effect 3
+[[./masseffect.png]]
+
+#+REVEAL: split
+
+** Use what the player knows
+
+In order to have the player advance, use previous knowledge (mechanics
+and dynamics) along the level
+
+Additionally, is is crucial to design the game so that, at every spot in
+a level, all the required mechanics have been taught and *checked*
+(i.e. the game "knows" that the player knows the mechanic)
+
+#+REVEAL: split
+
+** Avoid repetition
+
+Repeating the same mechanic over and over, once the player has mastered
+it, is boring
+
+#+REVEAL: split
+
+#+caption: In Final Fantasy VI, many similar combats take place
+[[./ff6combat.png]]
+
+* Technology and level design
+
+
+#+REVEAL: split
+
+** Prototyping
+
+
+#+REVEAL: split
+
+Before building the level, a few questions must be answered:
+
+- Environment type
+- Time of day
+- Size
+- Expected time of gameplay
+- Enemies
+- Abilities required
+- Overall objective in game
+
+#+REVEAL: split
+
+#+caption: Map conceputalization
+[[./concept_mapa.png]]
+
+#+REVEAL: split
+
+[[./map.png]]
+
+#+REVEAL: split
+
+[[./conceptstrikeforce.png]]
+
+#+REVEAL: split
+
+[[./boceto3dstrike.png]]
+
+#+REVEAL: split
+
+[[./model3dstrike.png]]
+
+#+REVEAL: split
+
+** Building simple prototypes
+
+Levels with name are easy to remember!
+
+#+REVEAL: split
+
+#+caption: Levels can be named
+[[./levelname.png]]
+
+#+REVEAL: split
+
+Linear levels con provide extra paths with rewards for the players that
+spend time on them
+
+#+REVEAL: split
+
+** Constructing levels with tools
+
+* Level elements
+
+
+#+REVEAL: split
+
+** Geometry
+
+[[./blockmesh.png]]
+
+#+REVEAL: split
+
+The first version of a level is built with blocks
+
+Designers can do this without the help of artists (fast!)
+
+It is a great technique to test the level
+
+*Final geometry should have the same bounding boxes*
+
+#+REVEAL: split
+
+** Objects and items
+
+Level objects can be part of the level, by guiding and rewarding the
+player
+
+#+REVEAL: split
+
+[[./coinsgalaxy.png]]
+
+#+REVEAL: split
+
+Needed objects must be placed in parts of the level that can be reached,
+and inform the user appropriately
+
+[[./objectsnaughty.png]]
+
+#+REVEAL: split
+
+** Rooms, spaces and scenes
+
+#+caption: The shape of the level indicates where to go
+[[./tube.png]]
+
+#+REVEAL: split
+
+[[./monster.png]]
+
+#+REVEAL: split
+
+#+caption: ...or where not to go yet!
+[[./pokemonsnorlax.png]]
+
+** Colors, shapes, information
+
+[[./arrow_planet.png]]
+
+#+REVEAL: split
+
+Reusing stereotypes helps!
+
+- Green: go
+- Red: don't go
+
+#+REVEAL: split
+
+** Affordances
+
+[[./bins.png]]
+
+#+REVEAL: split
+
+#+begin_quote
+  If it looks like I can go there, the player should be able to go there  (and vice-versa!)
+#+end_quote
+
+#+REVEAL: split
+
+** Affordances direct and help the player
+
+[[./bigaffordances.png]]
+
+#+REVEAL: split
+
+[[./unchartedlevel.png]]
+
+#+REVEAL: split
+
+Showing the non-directly achievable solution for the current problem informs the user
+
+[[./ocarinagate.png]]
+
+* Perspective and game types
+
+
+#+REVEAL: split
+
+Perspective does not only change aesthetics, it also changes gameplay
+
+#+REVEAL: split
+
+It is important not to confuse 3D aesthetics with 3D gameplay
+
+#+CAPTION: 2D gameplay can happen in 3D
+[[./raymanlegends.png]]
+
+#+REVEAL: split
+
+Even 2D technology can support 3D!
+
+[[./doom2_2d_sprite.png]]
+
+#+REVEAL: split
+
+** Top down 2D
+
+[[./zeldasnes.png]]
+
+#+REVEAL: split
+
+- The player sees the surroundings
+- Jumping is (sometimes) tricky
+- Mastering character movements can be part of the fun
+- Although we live in a 3D world, many human tasks actually happen in 2D
+
+#+REVEAL: split
+
+Level layout is like mapping
+
+Accessing parts is based on puzzles, not gamepad mastery
+
+#+REVEAL: split
+
+** 2D sidescroller
+
+[[./smbscroller.png]]
+
+#+REVEAL: split
+
+- Very focused, usually, on arcade mechanics
+- Low level movement is the core of the gameplay
+- Not well suited for labyrinths and puzzles (we have one less
+  dimension)
+
+#+REVEAL: split
+
+Linear level layouts
+
+Up and down requires managing gravity
+
+Getting to different parts of the level needs mastering the controls
+
+#+REVEAL: split
+
+** 3D FPS
+
+[[./skyrim.png]]
+
+#+REVEAL: split
+
+"Realistic" levels
+
+Player perspective is very limited, so information must be very salient
+
+No information about the exact position of the players body, pixel
+perfect manoeuvering is not a good idea
+
+#+REVEAL: split
+
+** 3D third person
+
+[[./skyrimthird.png]]
+
+#+REVEAL: split
+
+Similar to 3D FPS
+
+Wider range
+
+If the camera is close to the player, levels have the same requirements
+as FPS
+
+#+REVEAL: split
+
+However, some times 3D third person resembles 2D perspective (and thus,
+2D levels)
+
+[[./twaliens.png]]
+
+* Playtesting
+
+** Level performance
+
+Some times the level is playable, but it does not have the desired effect
+
+Or, some times, the players do not perform the way the think they should
+
+#+REVEAL: split
+
+It is important to test that the level works according to the designed objective
+
+** Level design bugs
+
+The implementation of a game mechanic can have a bug (programming team), but the level implementation (the /construction/) can have problems too
+
+# #+begin_html
+#   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dPWhl2rxGHs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>  </iframe>
+# #+end_html
+
+** External testers
+
+The designer's performance when testing a videogame is typically much
+better than the average player's
+
+It is *fundamental* to test the game with external players
+
+These players should represent our *target* (i.e. not only friends!)
+
+** Testing the game design and the levels is *fundamental*
+
+Think \(\rightarrow\) Run \(\rightarrow\) Test
+
+* Conclusions
+
+
+#+REVEAL: split
+
+** Game design is an amazing, complex discipline
+
+
+#+REVEAL: split
+
+** The game design document is the most common, useful deliverable
+
+
+#+REVEAL: split
+
+** Player cognition must be taken into account
+
+
+#+REVEAL: split
+
+** Different genres need different mechanics and dynamics
+
+
+#+REVEAL: split
+
+** Game and interface are strongly coupled
+
+
+#+REVEAL: split
+
+** Narratives are fundamental for engagement
+
+
+#+REVEAL: split
+
+** Levels must be prototyped, then tested (a lot)
+
+# * Bibliography
+
+# ** References

@@ -1,0 +1,24 @@
+.reveal p {
+  font-size: 25 px;
+}
+
+.reveal h1 {
+  font-size: 70px;
+}
+
+.reveal h2 {
+  font-size: 60px;
+}
+
+.references {
+  font-size: 15px;
+}
+
+.reveal section img {
+  border: none;
+  box-shadow: none;
+}
+
+.figure-number {
+    display: none;
+}
