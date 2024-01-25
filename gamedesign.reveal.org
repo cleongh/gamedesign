@@ -21,7 +21,6 @@ Games occur in the player's mind
 
 In general terms, what we do as designers is create dynamic experiences
 
-#+REVEAL: split
 
 ** Games are free (as in freedom) virtual experiences
 
@@ -145,7 +144,7 @@ The magical recipe for structuring a game design idea does not exist
 
 However, there are some good practices that are worth considering when writing down a design
 
-#+REVEAL: split
+
 
 ** The GDD contract
 
@@ -341,7 +340,7 @@ Again, it is important to remember that the player does not have to have /all th
   Do we need to know the exact speed of a football in a match?
 #+end_quote
 
-#+REVEAL: split
+
 
 *** Actions
 
@@ -381,7 +380,7 @@ game can become "easy to play, difficult to master"
 
 Now, for a couple genre examples...
 
-#+REVEAL: split
+
 
 *** Beat'em up
 
@@ -399,7 +398,7 @@ Now, for a couple genre examples...
 - Special attacks
 - Final bosses
 
-#+REVEAL: split
+
 
 *** Hack'n'slash
 
@@ -416,7 +415,7 @@ Now, for a couple genre examples...
 - Dodge
 - Finishers
 
-#+REVEAL: split
+
 
 ** Game dynamics
 
@@ -434,7 +433,7 @@ For instance, constructing a basic city in Age of Empires 2:
 #   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZLdHkVj6ka8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 # #+end_html
 
-#+REVEAL: split
+
 
 ** Game aesthetics
 
@@ -462,13 +461,13 @@ However, many other aspects of a videogame can be considered part of the aesthet
 
 Music is also fundamental in a game
 
-#+REVEAL: split
+
 
 ** Puzzles
 
 Puzzles have a problem: once they are solved, *the dynamics vanish*
 
-#+REVEAL: split
+
 
 ** Puzzles are heavily present in videogames
 
@@ -480,7 +479,6 @@ Puzzles have a problem: once they are solved, *the dynamics vanish*
 Videogame puzzles maximize user immersion when the objective and the
 puzzle-solving mechanics are well integrated with the gameplay
 
-#+REVEAL: split
 
 ** Feedback is fundamental in puzzles
 
@@ -490,7 +488,7 @@ out whether they are doing the right thing or not
 Good puzzles inform the user about the objective (what is to be solved)
 and the player's progress
 
-#+REVEAL: split
+
 
 ** Puzzles are a dangerous piece of game desing
 
@@ -510,7 +508,7 @@ There are many ways to avoid this:
 One of the most effective tools for engaging in a video game is a good
 narrative
 
-#+REVEAL: split
+
 
 ** Narratives are ubiquitous
 
@@ -519,7 +517,7 @@ We, humans, love narratives. We tell and hear narratives every day
 Conveying content through narratives is both effective and pleasant for
 the player
 
-#+REVEAL: split
+
 
 ** Characters
 
@@ -527,7 +525,7 @@ Narratives tell human lives
 
 Therefore, characters are the main vehicle for narratives in game design
 
-#+REVEAL: split
+
 
 ** Games already have characters!
 
@@ -538,7 +536,7 @@ Additionally, we are already using virtual characters
 [[./nathandrake.png]]
 
 
-#+REVEAL: split
+
 
 *** Emotions
 
@@ -552,7 +550,7 @@ the game
 #+caption: Last of us
 [[./lastofus.png]]
 
-#+REVEAL: split
+
 
 ** Plot
 
@@ -561,7 +559,7 @@ The narrative plot is one of the main constituents of a story
 Classic plots work well in videogames, and do not distract players from
 the gameplay
 
-#+REVEAL: split
+
 
 ** Different plots and endings
 
@@ -575,7 +573,7 @@ Actually, multiple plot exploration exists in "choose your your adventure"-like 
 #+caption: Black Mirror: Bandersnatch
 [[./bander.png]]
 
-#+REVEAL: split
+
 
 ** Narrative vs. open world
 
@@ -601,7 +599,7 @@ of good narratives, but there are ways to "provide" both
 #+attr_html: :width 300px
 [[./skyrimnarrative.png]]
 
-#+REVEAL: split
+
 
 ** Level ambience also tells a story
 
@@ -632,13 +630,13 @@ a narrative
 Understanding player cognition is an invaluable tool for good game
 design
 
-#+REVEAL: split
+
 
 ** Motivation and gameplay
 
 Player's behavior is affected by /motivation/
 
-#+REVEAL: split
+
 
 ** Intrinsic motivation
 
@@ -648,7 +646,7 @@ Intrinsic motivation happens when the reward is internal
   For instance, being the first player in the classification to show off
 #+end_quote
 
-#+REVEAL: split
+
 
 ** Extrinsic motivation
 
@@ -660,13 +658,13 @@ an objective, but leads to another motivation
 #+caption: Gold farming in League of Legends leads to better objects
 [[./goldfarming.png]]
 
-#+REVEAL: split
+
 
 ** Reinforcement
 
 Reinforcement is a classic way of controlling behaviour
 
-#+REVEAL: split
+
 
 *** Rewarding the player
 
@@ -683,7 +681,7 @@ Reinforcement is a classic way of controlling behaviour
 #+caption: Super Mario Bros mushrooms are a classic prize
 [[./toadstool.png]]
 
-#+REVEAL: split
+
 
 *** Reward frequency
 
@@ -698,13 +696,13 @@ The reward frequency can vary:
 #+caption: Clash of clans has a very addictive (and effective) rewarding system
 [[./clashclans.png]]
 
-#+REVEAL: split
+
 
 *** Punishment
 
 Punishment is, along with reinforcement, a very effective way of controlling player behaviour
 
-#+REVEAL: split
+
 
 *** Balance
 
@@ -716,7 +714,7 @@ Players (humans) have a limited memory span
 
 Memory is limited in terms of amount of elements to be learnt, and the amount of time the learning perdures
 
-#+REVEAL: split
+
 
 ** Teach one mechanic at a time
 
@@ -724,13 +722,13 @@ Focusing on one single thing eases learing
 
 If only one mechanic at a time in taught, the player will have less difficulties
 
-#+REVEAL: split
+
 
 ** Let the player practice
 
 One a mechanic is "described", it is important to let the player practice in order to fixate the behavior
 
-#+REVEAL: split
+
 
 ** Repetition
 
@@ -753,7 +751,7 @@ beginning of the game
 #+caption: Shooting gallery in Zelda Ocarina of time
 [[./shootinggallery.png]]
 
-#+REVEAL: split
+
 
 ** Interface and HUD
 
@@ -792,7 +790,7 @@ because the players can have very different controllers
 * Level Design
 
 
-#+REVEAL: split
+
 
 ** Conceptualization
 
@@ -802,7 +800,7 @@ questions:
 - Why does the player need the level?
 - Why does the game need the level?
 
-#+REVEAL: split
+
 
 *** How to come up with a level
 
@@ -817,7 +815,7 @@ questions:
   If the level seems long and boring, then *it is* long and boring
 #+end_quote
 
-#+REVEAL: split
+
 
 ** Worlds
 
@@ -827,7 +825,7 @@ we have them!)
 But, in general, remember that /walking is not a mechanic/, it is just
 the way to go from one point to another
 
-#+REVEAL: split
+
 
 ** Characters
 
@@ -836,7 +834,7 @@ in a level
 
 [[./guardocarina.png]]
 
-#+REVEAL: split
+
 
 ** Interest and anticipation
 
@@ -844,7 +842,7 @@ in a level
 provide a good ambience
 [[./expectation.png]]
 
-#+REVEAL: split
+
 
 ** Design, graphics and sound
 
@@ -854,7 +852,7 @@ artistic assets for the levels
 However, there must be a dialogue between designers and artists for the
 assets to make sense inside the level
 
-#+REVEAL: split
+
 
 ** Design coherence
 
@@ -870,7 +868,7 @@ It does not make sense to have stimpacks in ancient ruins!
 * Writing levels
 
 
-#+REVEAL: split
+
 
 ** Level objectives
 
@@ -907,7 +905,7 @@ Levels must challenge player skills in order to be interesting
 #   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Phs2DhzGie4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>  </iframe>
 # #+end_html
 
-#+REVEAL: split
+
 
 ** Rhythm and tension
 
@@ -927,7 +925,7 @@ appropriate pace
 #+caption: Tension arc in Mass Effect 3
 [[./masseffect.png]]
 
-#+REVEAL: split
+
 
 ** Use what the player knows
 
@@ -938,7 +936,7 @@ Additionally, is is crucial to design the game so that, at every spot in
 a level, all the required mechanics have been taught and *checked*
 (i.e. the game "knows" that the player knows the mechanic)
 
-#+REVEAL: split
+
 
 ** Avoid repetition
 
@@ -953,7 +951,7 @@ it, is boring
 * Technology and level design
 
 
-#+REVEAL: split
+
 
 ** Prototyping
 
@@ -991,7 +989,7 @@ Before building the level, a few questions must be answered:
 
 [[./model3dstrike.png]]
 
-#+REVEAL: split
+
 
 ** Building simple prototypes
 
@@ -1007,14 +1005,14 @@ Levels with name are easy to remember!
 Linear levels con provide extra paths with rewards for the players that
 spend time on them
 
-#+REVEAL: split
+
 
 ** Constructing levels with tools
 
 * Level elements
 
 
-#+REVEAL: split
+
 
 ** Geometry
 
@@ -1030,7 +1028,7 @@ It is a great technique to test the level
 
 *Final geometry should have the same bounding boxes*
 
-#+REVEAL: split
+
 
 ** Objects and items
 
@@ -1048,7 +1046,7 @@ and inform the user appropriately
 
 [[./objectsnaughty.png]]
 
-#+REVEAL: split
+
 
 ** Rooms, spaces and scenes
 
@@ -1075,7 +1073,7 @@ Reusing stereotypes helps!
 - Green: go
 - Red: don't go
 
-#+REVEAL: split
+
 
 ** Affordances
 
@@ -1123,7 +1121,7 @@ Even 2D technology can support 3D!
 
 [[./doom2_2d_sprite.png]]
 
-#+REVEAL: split
+
 
 ** Top down 2D
 
@@ -1142,7 +1140,7 @@ Level layout is like mapping
 
 Accessing parts is based on puzzles, not gamepad mastery
 
-#+REVEAL: split
+
 
 ** 2D sidescroller
 
@@ -1163,7 +1161,7 @@ Up and down requires managing gravity
 
 Getting to different parts of the level needs mastering the controls
 
-#+REVEAL: split
+
 
 ** 3D FPS
 
@@ -1178,7 +1176,7 @@ Player perspective is very limited, so information must be very salient
 No information about the exact position of the players body, pixel
 perfect manoeuvering is not a good idea
 
-#+REVEAL: split
+
 
 ** 3D third person
 
@@ -1236,39 +1234,39 @@ Think \(\rightarrow\) Run \(\rightarrow\) Test
 * Conclusions
 
 
-#+REVEAL: split
+
 
 ** Game design is an amazing, complex discipline
 
 
-#+REVEAL: split
+
 
 ** The game design document is the most common, useful deliverable
 
 
-#+REVEAL: split
+
 
 ** Player cognition must be taken into account
 
 
-#+REVEAL: split
+
 
 ** Different genres need different mechanics and dynamics
 
 
-#+REVEAL: split
+
 
 ** Game and interface are strongly coupled
 
 
-#+REVEAL: split
+
 
 ** Narratives are fundamental for engagement
 
 
-#+REVEAL: split
 
-** Levels must be prototyped, then tested (a lot)
+
+** Levels must be prototyped, then tested to check the hypotheses
 
 # * Bibliography
 
