@@ -1271,3 +1271,28 @@ Think \(\rightarrow\) Run \(\rightarrow\) Test
 # * Bibliography
 
 # ** References
+* Bibliography
+
+- Kent, S. L.: The Ultimate History of Video Games. Prima Pub (2001) / La Gran Historia de los Videojuegos. B de Books (2016)
+- Perry, D., DeMaria, R.: David Perry on Game Design: A Brainstorming Toolbox. Charles River Media (2009)
+- Schell, J.: The Art of Game Design: A Book of Lenses. A. K. Peters / CRC Press. 3rd Edition (2019)
+- Adams, E.: Fundamentals of Action and Arcade / Adventure / Construction and Simulation / Puzzle and Casual / Role-Playing / Shooter / Sports / Strategy / Vehicle Simulation Design. New Riders (2014)
+- Adams, E.: Fundamentals of Game Design. New Riders. Second Edition (2009)
+- Adams, E., Dormans, J.: Game Mechanics: Advanced Game Design. New Riders Publishing (2012)
+
+  #+REVEAL: split
+  
+- Adams, E., Sapeta, M.: Casual and Social Games: Advanced Game Design. New Riders Publishing (2013)
+- Caillois, R.: Los juegos y los hombres: la máscara y el vértigo. Fondo de Cultura Económica (1958)
+- Crawford, C.: Chris Crawford on Game Design. New Riders (2003)
+- DeMaria, R. and Wilson, J. L.: High Score! Expanded: The Illustrated History of Electronic Games. CRC Press. 3rd Edition (2018)
+- Elias, G. S., Garfield, R., Gutschera, K.R.: Characteristics of Games. MIT Press (2012)
+- Huizinga, J.: Homo Ludens: A Study of the Play-Element in Culture. Beacon Press (1971)
+
+  #+REVEAL: split
+  
+- Koster, R.: A Theory of Fun. O’Reilly Media. 10th Anniversary Edition (2013)
+- Loguidice, B. and Barton, M.: Vintage Games: An Insider Look at the History of Grand Theft Auto, Super Mario, and the Most Influential Games of All Time. Routledge (2012)
+- Mott, T., Molyneux, P.: 1001 Video Games You Must Play Before You Die. Universe Books (2010)
+- Norman, D. A.: The Design of Everyday Things. Basic Books. Second Edition (2013)
+- Parkin, S.: An Illustrated History of 151 Video Games: A Detailed Guide to the Most Important Games. Lorenz Books (2014)
